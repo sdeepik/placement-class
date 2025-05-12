@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    printf("Enter two numbers: ");
+    scanf("%d%d", &a, &b);
+
+    printf("Add = %d\n", a + b);
+    printf("Sub = %d\n", a - b);
+    printf("Mul = %d\n", a * b);
+    if (b != 0)
+        printf("Div = %d\n", a / b);
+    else
+        printf("Div by 0 not allowed\n");
+
+    return 0;
+}
