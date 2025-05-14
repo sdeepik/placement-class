@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    char s;
+    scanf("%c",&s);
+if(s=='a'||s=='e'||s=='i'||s=='o'||s=='u')
+{
+printf("vowels");
+}
+else if (s=='A'||s=='E'||s=='I'||s=='O'||s=='U')
+{
+printf("vowels");
+}
+else
+{
+    printf("constants");
+}
+return 0;
+
+}
