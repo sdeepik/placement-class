@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+     int a;
+    scanf("%d",&a);
+     (a%3==0 && a%5==0)? printf("HiHello"):
+    (a%3==0)? printf("Hi"):
+    (a%5==0)? printf("Hello"):
+    printf(" ");
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
