@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main() {
+    int dividend, divisor, quotient = 0;
+
+
+    scanf("%d %d", &dividend, &divisor);
+
+
+    if (divisor == 0) {
+        printf("Division by zero is not allowed.\n");
+        return 1;
+    }
+    int sign = 1;
+    if ((dividend < 0 && divisor > 0) || (dividend > 0 && divisor < 0)) {
+        sign = -1;
+    }
+    int a = dividend < 0 ? -dividend : dividend;
+    int b = divisor < 0 ? -divisor : divisor;
+
+    while (a >= b) {
+        a -= b;
+        quotient++;
+    }
+
+    quotient *= sign;
+
+    
+    printf("%d\n", quotient);
+
+    return 0;
+}
