@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int multiplicant, n;
+    scanf("%d %d", &multiplicant, &n);
+    for (int i = 1; i <= multiplicant; i++) {
+        printf("%d * %d = %d\n", i, n, i * n);
+    }
+
+    return 0;
+}
